@@ -1,0 +1,25 @@
+
+ {
+    "title": "CreateTroubleTicket",
+    "type": "object",
+    "properties": {
+        "description": {
+            "type": "string"
+        },
+        "severity": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "ticketType": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "description",
+        "severity",
+        "status",
+        "ticketType"
+    ]
+};
