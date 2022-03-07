@@ -1,7 +1,6 @@
 {
   "swagger": "2.0",
-  "type": "object",
-    "properties": {
+    "parameters": {
         "u_spplier": {
             "type": "string"
         },
