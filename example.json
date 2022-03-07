@@ -1,0 +1,23 @@
+{
+  "swagger": "2.0",
+  "type": "object",
+    "properties": {
+        "u_spplier": {
+            "type": "string"
+        },
+        "u_supplier_number": {
+            "type": "string"
+        },
+        "u_tax_payer_id": {
+            "type": "string"
+        },
+       
+    },
+    "required": [
+        "u_spplier",
+        "u_supplier_number",
+        "u_tax_payer_id",
+        
+    ]
+}
+            
