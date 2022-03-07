@@ -1,0 +1,104 @@
+"definitions": {
+	"u_questions_responses": {
+		"type": "string"
+	},
+	"u_email": {
+		"type": "string"
+	},
+	"sys_import_state_comment": {
+		"type": "string"
+	},
+	"template_import_log": {
+		"type": "string"
+	},
+	"sys_updated_on": {
+		"type": "string"
+	},
+	"sys_class_name": {
+		"type": "string"
+	},
+	"sys_target_sys_id": {
+		"type": "object",
+		"properties": {
+			"link": {
+				"type": "string"
+			},
+			"value": {
+				"type": "string"
+			}
+		}
+	},
+	"sys_id": {
+		"type": "string"
+	},
+	"sys_updated_by": {
+		"type": "string"
+	},
+	"sys_created_on": {
+		"type": "string"
+	},
+	"sys_import_set": {
+		"type": "object",
+		"properties": {
+			"link": {
+				"type": "string"
+			},
+			"value": {
+				"type": "string"
+			}
+		}
+	},
+	"u_tax_payer_id": {
+		"type": "string"
+	},
+	"sys_transform_map": {
+		"type": "object",
+		"properties": {
+			"link": {
+				"type": "string"
+			},
+			"value": {
+				"type": "string"
+			}
+		}
+	},
+	"u_status": {
+		"type": "string"
+	},
+	"u_raw_json": {
+		"type": "string"
+	},
+	"sys_created_by": {
+		"type": "string"
+	},
+	"sys_import_row": {
+		"type": "string"
+	},
+	"u_administrative_contact": {
+		"type": "string"
+	},
+	"sys_row_error": {
+		"type": "string"
+	},
+	"sys_target_table": {
+		"type": "string"
+	},
+	"sys_mod_count": {
+		"type": "string"
+	},
+	"u_qualification_number": {
+		"type": "string"
+	},
+	"sys_tags": {
+		"type": "string"
+	},
+	"u_spplier": {
+		"type": "string"
+	},
+	"sys_import_state": {
+		"type": "string"
+	},
+	"u_supplier_number": {
+		"type": "string"
+	}
+}
