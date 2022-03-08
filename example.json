@@ -38,8 +38,8 @@
             "type": "integer",
             "format": "int32"
       }
-        ],       
+        ]      
         }
       }
     }
-   }          
+   }
