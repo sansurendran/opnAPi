@@ -80,7 +80,7 @@
         ],
         "parameters": [
           {
-            "name": "u_spplier",
+            "name": "Supplier",
             "in": "body",
             "description": "Cerificate to add to the store",
             "required": true,
@@ -129,10 +129,10 @@
     "NewSupplier": {
       "type": "object",
       "required": [
-        "u_spplier"
+        "Supplier"
       ],
       "properties": {
-        "u_spplier": {
+        "Supplier": {
           "type": "string"
         },
         "tag": {
