@@ -19,11 +19,11 @@
         ],
     "parameters": [
       {
-           "name": "u_spplier",
+           "name": "limit",
             "in": "query",
-            "description": "supplier name",
-            "required": true,
-            "type": "integer",
+            "description": "maximum number of results to return",
+            "required": false,
+            "type": "integer",,
             "format": "int32"
       }
         ],
