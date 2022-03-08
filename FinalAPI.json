@@ -60,7 +60,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/Pet"
+                "$ref": "#/definitions/Cert"
               }
             }
           },
@@ -104,8 +104,8 @@
           }
         }
       }
-    },
-    
+    }
+  },
   "definitions": {
     "Cert": {
       "type": "object",
@@ -115,11 +115,12 @@
         },
         {
           "required": [
-            "u_spplier"
+            "id"
           ],
           "properties": {
-            "u_spplier": {
-              "type": "string",
+            "id": {
+              "type": "integer",
+              "format": "int64"
             }
           }
         }
