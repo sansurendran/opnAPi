@@ -49,4 +49,14 @@
               }
             }    
     },  
+       "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/ErrorModel"
+            }
+          }
+        }
+      }
+    }
+   }
 }            
