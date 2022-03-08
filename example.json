@@ -23,7 +23,8 @@
             "in": "query",
             "description": "supplier name",
             "required": true,
-            "type": "string"         
+            "type": "integer",
+            "format": "int32"
       }
         ],
      "responses": {
