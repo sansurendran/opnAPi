@@ -1,0 +1,159 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Apollo Integration",
+    "description": "A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "name": "Apolo API Team"
+    },
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "host": "apollo.swagger.io",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/cert": {
+      "get": {
+        "description": "Returns all certifications from the system that the user has access to",
+        "operationId": "findcert",
+        "produces": [
+          "application/json",
+          "application/xml",
+          "text/xml",
+          "text/html"
+        ],
+        "parameters": [
+          {
+            "name": "tags",
+            "in": "query",
+            "description": "tags to filter by",
+            "required": false,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "csv"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "maximum number of results to return",
+            "required": false,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "pet response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Pet"
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/ErrorModel"
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Creates a new certificate in the store.  Duplicates are allowed",
+        "operationId": "addCert",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "u_spplier",
+            "in": "body",
+            "description": "Cerificate to add to the store",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NewSupplier"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "cert response",
+            "schema": {
+              "$ref": "#/definitions/Cert"
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/ErrorModel"
+            }
+          }
+        }
+      }
+    },
+    
+  "definitions": {
+    "Cert": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/NewSupplier"
+        },
+        {
+          "required": [
+            "u_spplier"
+          ],
+          "properties": {
+            "u_spplier": {
+              "type": "string",
+            }
+          }
+        }
+      ]
+    },
+    "NewSupplier": {
+      "type": "object",
+      "required": [
+        "u_spplier"
+      ],
+      "properties": {
+        "u_spplier": {
+          "type": "string"
+        },
+        "tag": {
+          "type": "string"
+        }
+      }
+    },
+    "ErrorModel": {
+      "type": "object",
+      "required": [
+        "code",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
