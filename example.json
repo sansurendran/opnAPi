@@ -42,6 +42,9 @@
         "responses": {
           "200": {
             "description": "pet response",
+          },
+          "default": {
+            "description": "unexpected error",
           }
         }
       }
