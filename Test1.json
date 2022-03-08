@@ -51,8 +51,7 @@
             "in": "query",
             "description": "maximum number of results to return",
             "required": false,
-            "type": "integer",
-            "
+            "type": "integer"
           }
         ],
         "responses": {
