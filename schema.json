@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "u_spplier": {
+      "type": "string"
+    },
+    "u_supplier_number": {
+      "type": "string"
+    },
+    "u_tax_payer_id": {
+      "type": "string"
+    },
+    "u_status": {
+      "type": "string"
+    },
+    "u_administrative_contact": {
+      "type": "string"
+    },
+    "u_email": {
+      "type": "string"
+    },
+    "u_raw_json": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "u_spplier",
+    "u_supplier_number",
+    "u_tax_payer_id",
+    "u_status",
+    "u_administrative_contact",
+    "u_email",
+    "u_raw_json"
+  ]
+}
