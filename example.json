@@ -38,25 +38,8 @@
             "type": "integer",
             "format": "int32"
       }
-        ],
-     "responses": {
-          "200": {
-            "description": "pet response",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/Pet"
-              }
-            }    
-    },  
-       "default": {
-            "description": "unexpected error",
-            "schema": {
-              "$ref": "#/definitions/ErrorModel"
-            }
-          }
+        ],       
         }
       }
     }
-   }
-}            
+   }          
