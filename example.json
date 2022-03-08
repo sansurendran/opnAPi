@@ -1,22 +1,60 @@
 {
   "swagger": "2.0",
-    "parameters": {
-        "u_spplier": {
-            "type": "string"
-        },
-        "u_supplier_number": {
-            "type": "string"
-        },
-        "u_tax_payer_id": {
-            "type": "string"
-        },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+   "paths": {
+    "/pets": {
+      "get": {
+        "description": "Returns all pets from the system that the user has access to",
+        "operationId": "findPets",
+        "produces": [
+          "application/json",
+          "application/xml",
+          "text/xml",
+          "text/html"
+        ],
+    "parameters": [
+      {
+      "name": "u_spplier",
+            "in": "query",
+            "description": "supplier name",
+            "required": true,
+            "type": "string",
+            
+      }
+      {
+      "name": "u_supplier_number",
+            "in": "query",
+            "description": "supplier number",
+            "required": true,
+            "type": "string",
+            
+      }
+       {
+      "name": "u_tax_payer_id",
+            "in": "query",
+            "description": "TaxPayerId",
+            "required": true,
+            "type": "string",
+            
+      }
+        ],
+     "responses": {
+          "200": {
+            "description": "pet response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Pet"
+              }
+            }
+          
        
     },
-    "required": [
-        "u_spplier",
-        "u_supplier_number",
-        "u_tax_payer_id",
-        
-    ],
+   
 }
             
